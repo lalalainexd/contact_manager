@@ -11,7 +11,8 @@ group :development, :test do
   # Use unicorn as the app server
   gem 'unicorn'
   gem 'sqlite3'
-
+  gem 'guard-rspec'
+  gem 'rb-fsevent', '~> 0.9'
 end
 
 # Gems used only for assets and not required
