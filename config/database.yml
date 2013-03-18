@@ -8,8 +8,8 @@
 #   gem 'pg'
 
 development:
-  adapter: postgresql
-  database: contact_manager_development
+  adapter: sqplite3
+  database: db/development.sqlite3
   pool: 5
   timeout: 5000
 
