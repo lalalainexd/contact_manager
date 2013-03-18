@@ -1,11 +1,15 @@
-# SQLite version 3.x
+# Postgrest and sqlite!
+#
+#   gem install pq
 #   gem install sqlite3
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
+#   gem 'pg'
+
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: postgresql
+  database: contact_manager_development
   pool: 5
   timeout: 5000
 
@@ -19,7 +23,8 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: contact_manager_production
   pool: 5
   timeout: 5000
+  username: lalalainexd
